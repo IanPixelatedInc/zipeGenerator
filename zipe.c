@@ -14,6 +14,24 @@ exit(2);
 }
 int l=0;
 while(1){
-fputc(// WORK IN PROGRESS
+  if(l==0x10){
+    fprintf("$%s",argv[3]);
+    l+=37;
+    continue;
+  }
+  if(l==0x100){
+    break;
+  }
+fputc(zipe,0);
+  l++;
 }
+  int s=0;
+  
+  while(1){
+    s=fgetc(zip);
+    if(s==EOF)
+      break;
+    fputc(zipe,s);
+  }
+  exit(0);
 }
