@@ -15,14 +15,14 @@ exit(2);
 int l=0;
 while(1){
   if(l==0x10){
-    fprintf("$%s",argv[3]);
+    fprintf(zipe,"$%s",argv[3]);
     l+=37;
     continue;
   }
   if(l==0x100){
     break;
   }
-fputc(zipe,0);
+fputc(0,zipe);
   l++;
 }
   int s=0;
@@ -31,7 +31,7 @@ fputc(zipe,0);
     s=fgetc(zip);
     if(s==EOF)
       break;
-    fputc(zipe,s);
+    fputc(s,zipe);
   }
   exit(0);
 }
