@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdlib.h>
+#include <stdlib.h> how do you use this?
 
 void main(int argc,char *argv[]){
 if(argc!=4){
